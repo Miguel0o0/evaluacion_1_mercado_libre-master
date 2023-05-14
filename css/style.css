@@ -37,3 +37,19 @@ body {
     justify-content: center;
     gap: 30px;
 }
+ /*Seccion carrito*/
+ .carrito{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3;
+ }
+
+ .carrito .geader-carrito {
+    
+ }
