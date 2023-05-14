@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg bg-mercado-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mercado Libre 2</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index2.html">Ingresar</a> 
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Crear cuenta
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Creacion de cuenta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="username" class="col-form-label">Ingrese su correo</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="password" class="col-form-label">Ingrese su nueva contraseña</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Crear cuenta</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a> -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link disabled">Disabled</a> -->
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <ul class="nav bg-mercado-color justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Oferta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Historial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mercado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Moda</a>
+        </li>
+      </ul>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/city.webp" class="d-block w-100" alt="..." width="30px" height="400px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/mesa 1.webp" class="d-block w-100" alt="..." width="3px" height="400px">
+          </div>
+          <div class="carousel-item">
+            <img src="img/nae.jpg" class="d-block w-100" alt="..." width="100px" height="400px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <br>
+
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">Pago comodo y seguro</button>
+        <button type="button" class="btn btn-outline-primary">Hasta 12 cuotas sin interes</button>
+        <button type="button" class="btn btn-outline-primary">Tarjeta de debito</button>
+      </div>
+      <section>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-6">
+                  <div class="card ml-5 text-center col-md-6" style="width: 18rem;">
+                      <img src="img/gta.webp" class="card-img-top" alt="..." width="30px" height="250px">
+                      <div class="card-body">
+                        <h5 class="card-title">Grand theft auto 5</h5>
+                        <p class="card-text">-ps4 <br> -despacho a domicilio</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                      </div>
+                  </div>
+              </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card ml-5 text-center d-flex col-md-6" style="width: 18rem;">
+                    <img src="img/hp.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Computador hp</h5>
+                      <p class="card-text">-Pantalla 60 hz <br> -Procesador: i9-9800k <br> -Despacho a domicilio</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card ml-5 text-center d-flex col-md-6" style="width: 18rem;">
+                 <img src="img/ps5 colo colo.webp" class="card-img-top" alt="..." width="30px" height="184px">
+                  <div class="card-body">
+                      <h5 class="card-title">ps5 colo colo</h5>
+                      <p class="card-text">-skin colo colo <br> -mandos incluidos <br> -Despacho a domicilio <br> -Victorias aseguradas por la skin</p>
+                      <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card ml-5 text-center d-flex col-md-6" style="width: 18rem;">
+                <img src="img/pelota colo colo.webp" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                    <h5 class="card-title">Pelota del arbo</h5>
+                    <p class="card-text">-Skin de colo colo <br> -Golazos como los de esteban paredes <br> -Le gana a los malos de la U</p>
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+              <div class="card ml-5 text-center d-flex col-md-6" style="width: 18rem;" >
+                <img src="img/lg.jpg" class="card-img-top" alt="..." height="250px" >
+                <div class="card-body" >
+                    <h5 class="card-title">Televisor LG</h5>
+                    <p class="card-text">-50 Pulgadas <br>-Full HD <br>-4K <br>-Despacho a domicilio</p>
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card ml-5 text-center d-flex col-md-6" style="width: 18rem;">
+                <img src="img/esvox.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                    <h5 class="card-title">xbox Series x</h5>
+                    <p class="card-text">-Incluye mando <br>-Incluye bloodborne <br>-6 meses game pass gratis <br>-Despacho a domicilio</p>
+                    <a href="xbox.html" class="btn btn-primary">Detalle del productos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+      <br>
+
+      <p class="text">Ofertas</p>
+
+      <div class="Final">
+        <a href="Acercde.html">Acerca de</a>
+        <a href="Terminosycon.html">Terminos y condiciones</a>
+      </div>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

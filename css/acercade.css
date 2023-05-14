@@ -1,0 +1,29 @@
+.bg-mercado-color {
+    background-color: #fff153;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+body {
+    background-color: #f0e6e4;
+}
+
+.text {
+    margin-left: 113px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
