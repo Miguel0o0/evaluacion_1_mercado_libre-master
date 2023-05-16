@@ -75,17 +75,6 @@
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    ...
-  </div>
-</div>
           </div>
         </div>
       </nav>
@@ -203,54 +192,69 @@
             </div>
           </div>
         </div>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">Carrito</button>
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Tu Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!--Carrito de compras-->
+            <div class="carrito">
+              <div class="header-carrito">
+                <h2>Carrito</h2>
+              </div>
+              <div class="carrito-items">
+                <div class="carrito-item">
+                  <img src="img/gta.webp" alt="" width="80px">
+                  <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">gta 5</span>
+                    <div class="selector-cantidad">
+                      <i class="fa-solid fa-minus restar-cantidad"></i>
+                      <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                      <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    </div>
+                    <span class="carrito-item-precio">$60.000</span>
+                  </div>
+                  <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                  </span>
+                </div>
+                <div class="carrito-item">
+                  <img src="img/hp.webp" alt="" width="80px">
+                  <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Notebook HP</span>
+                    <div class="selector-cantidad">
+                      <i class="fa-solid fa-minus restar-cantidad"></i>
+                      <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                      <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    </div>
+                    <span class="carrito-item-precio">$30.000</span>
+                  </div>
+                  <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="carrito-total">
+                <div class="fila">
+                  <strong>Tu Total</strong>
+                  <span class="carrito-precio-total">
+                    $120.000.000
+                  </span>
+                </div>
+                <buttom class="btn-pagar">Pagar<i class="fa-solid fa-bag-shopping"></i></buttom>
+              </div>
+            </div>
+            ...
+          </div>
+        </div>
+
        
-      <!--Carrito de compras-->
-      <div class="carrito">
-        <div class="header-carrito">
-          <h2>Carrito</h2>
-        </div>
-        <div class="carrito-items">
-          <div class="carrito-item">
-            <img src="img/gta.webp" alt="" width="80px">
-            <div class="carrito-item-detalles">
-                <span class="carrito-item-titulo">gta 5</span>
-                <div class="selector-cantidad">
-                <i class="fa-solid fa-minus restar-cantidad"></i>
-                <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                <i class="fa-solid fa-plus sumar-cantidad"></i>
-                </div>
-                <span class="carrito-item-precio">$60.000</span>
-            </div>
-            <span class="btn-eliminar">
-              <i class="fa-solid fa-trash"></i>
-            </span>
-          </div>
-          <div class="carrito-item">
-            <img src="img/hp.webp" alt="" width="80px">
-            <div class="carrito-item-detalles">
-                <span class="carrito-item-titulo">Notebook HP</span>
-                <div class="selector-cantidad">
-                  <i class="fa-solid fa-minus restar-cantidad"></i>
-                  <input type="text" value="2" class="carrito-item-cantidad" disabled>
-                  <i class="fa-solid fa-plus sumar-cantidad"></i>
-                </div>
-                <span class="carrito-item-precio">$30.000</span>
-            </div>
-            <span class="btn-eliminar">
-              <i class="fa-solid fa-trash"></i>
-            </span>
-          </div>
-        </div>
-        <div class="carrito-total">
-          <div class="fila">
-            <strong>Tu Total</strong>
-            <span class="carrito-precio-total">
-              $120.000.000
-            </span>
-          </div>
-          <buttom class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></buttom>
-        </div>
-      </div>
+
 
       </section>  
 
