@@ -12,6 +12,13 @@ function ready(){
         var buttom = botonesEliminarItem[i]
         buttom.addEventListener('click', eliminarItemCarrito)
     }
+
+    var botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
+    for(var i=0;i<botonesSumarCantidad.length; i++){
+        var button = botonesSumarCantidad[i];
+        button.addEventListener('click',sumarCantidad);
+    }
+
 }
 
 function eliminarItemCarrito(event){
@@ -56,4 +63,14 @@ function ocultarCarrito(){
         var item = document.getElementsByClassName('contenedor-items')[0];
         item.style.width = '100%';
     }
+}
+
+function sumarCantidad(event){
+    var buttonClicked = event.target;
+    var selector = buttonClicked.parentElement;
+    console.log(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
+    var cantidadActual = selector.getElementsByClassName('carrito-item-cantidad')[0].value;
+    cantidadActual++;
+    selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
+    actualizarTotalCarrito();
 }
