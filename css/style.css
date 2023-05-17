@@ -183,3 +183,14 @@ body {
     background-color: #fff153;
     text-align: center;
 }
+
+.boton-item {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
