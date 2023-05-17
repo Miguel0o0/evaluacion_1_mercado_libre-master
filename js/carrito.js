@@ -16,7 +16,13 @@ function ready(){
     var botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
     for(var i=0;i<botonesSumarCantidad.length; i++){
         var button = botonesSumarCantidad[i];
-        button.addEventListener('click',sumarCantidad);
+        button.addEventListener('click', sumarCantidad);
+    }
+
+    var botonesRestarCantidad = document.getElementsByClassName('restar-cantidad');
+    for(var i=0;i<botonesRestarCantidad.length; i++){
+        var button = botonesRestarCantidad[i];
+        button.addEventListener('click',restarCantidad);
     }
 
 }
@@ -73,4 +79,16 @@ function sumarCantidad(event){
     cantidadActual++;
     selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
     actualizarTotalCarrito();
+}
+
+function restarCantidad(event){
+    var buttonClicked = event.target;
+    var selector = buttonClicked.parentElement;
+    console.log(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
+    var cantidadActual = selector.getElementsByClassName('carrito-item-cantidad')[0].value;
+    cantidadActual--;
+    if(cantidadActual>=1){
+        selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
+        actualizarTotalCarrito();
+    }
 }
