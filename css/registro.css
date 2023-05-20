@@ -51,7 +51,7 @@
     border-radius: 3px;
     display: flex;
     align-items: center;
-    transition: max-height 05s;
+    transition: max-height 0.5s;
 }
 
 input {

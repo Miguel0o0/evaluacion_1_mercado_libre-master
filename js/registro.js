@@ -9,3 +9,10 @@ singIn.onclick = function() {
     singUp.classList.add("disable");
     singIn.classList.remove("disable");
 } 
+
+singUp.onclick = function() {
+    nameInput.style.maxHeight = "60px";
+    title.innerHTML = "Registro";
+    singUp.classList.remove("disable");
+    singIn.classList.add("disable");
+} 
