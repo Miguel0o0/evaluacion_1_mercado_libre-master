@@ -1,13 +1,11 @@
-function login() {
-    var user, password
-    user = document. getElementById("usuario").value;
-    password = document. getElementById("contrasena").value;
+let singUp = document.getElementById("singUp");
+let singIn = document.getElementById("singIp");
+let nameInput = document.getElementById("nameInput");
+let title = document.getElementById("title");
 
-    if(user == "prueba" && password == "1234"){
-        window.location = "index.html";
-    }
-    else{
-        alert("Datos incorrectos")
-    }
+singIn.onclick = function() {
+    nameInput.style.maxHeight = "0";
+    title.innerHTML = "Login";
+    singUp.classList.add("disable");
+    singIn.classList.remove("disable");
 } 
-
